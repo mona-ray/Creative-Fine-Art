@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: #494f57;
+}
+.content{
+    display: flex;
+    max-width: 540px;
+    width:100%;
+    height : 350px;
+    position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+
+}
+.content .container,
+.content .form-content{
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    background: #fff;
+}
+
+.content .container h1{
+    text-transform: uppercase;
+}
+.content .container img{
+    display : block;
+    width: 220px;
+    height : 220px;
+    border-radius: 50%;
+}
+.content .form-content .tabs ul{
+ text-align: center;
+}
+.content .form-content .tabs ul li{
+    display: inline-block;
+    margin : 2px;
+    padding : 3px 7px;
+    font-size : 14px;
+    color: #494f57;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.content .form-content .tabs ul li.active{
+    border-bottom: 2px solid #494f57;
+}
+.content .form-content .signin-content,
+.content .form-content  .signup-content
+{
+    margin-top : 20px;
+}
+.content .form-content .box{
+    margin-bottom: 15px;
+}
+.content .form-content .box input{
+    width: 100%;
+    padding: 3px 8px;
+    border : 0;
+    font-size : 12px;
+    background : #ecebeb;
+}
+.content .form-content .btn{
+    margin-top: 20px;
+    background: #494f57;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.content .form-content .btn{
+    color: #fff;
+}
+@media only screen and (max-width : 441px){
+    .content{
+        flex-direction: column;
+        text-align: center;
+        left: 80%;
+        
+    }
+    .content .container h1{
+        font-size: 20px;
+    }
+    .content .container img{
+        width: 100px;
+        height: 100px;
+    }
+    .content .container,
+.content .form-content{
+   background: #494f57;  
+}
+.content .form-content .tabs ul li{
+    color: black;
+}
+.content .form-content .tabs ul li.active{
+    color:black;
+}
+.content .form-content .btn{
+    background: rgb(85, 133, 85);
+}
+}

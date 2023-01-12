@@ -1,0 +1,176 @@
+*{
+    
+    padding : 0;
+    margin :0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: 2s cubic-bezier(.34,1.12,.68,1.31);
+}
+.logo{
+    position: relative;
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    position: relative;
+    width : 37%;
+    border : 3px solid white;
+    border-radius: 50%;
+}
+.navbar{
+    width:100%;
+    position: relative;
+    background-color: #151922;
+    display : flex;
+}
+.nav-list{
+    position: relative;
+    width :50%;
+    background-color: #151922;
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+    position: relative;
+    padding : 26px 30px;
+    list-style: none;
+}
+.nav-list li a{
+    position: relative;
+    text-decoration: none;
+    color: #FFFADA;
+}
+.right-navbar{
+    position: relative;
+    background-color: #151922;
+    text-align: right;
+    width : 50%;
+    align-items: center;
+    
+}
+#search{
+    margin-top: 27px;
+  
+}
+#search-buttons{
+margin-top: 27px;
+margin-right: 16px;
+width: 70px;
+}
+#login{
+  background-color: #FFFADA;
+  width: 60px;
+  border-radius: 16px;
+  height: 25px;
+}
+#login a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+#register{
+    background-color: #FFFADA;
+    width : 80px;
+    border-radius: 16px;
+    height:25px;
+}
+#register a{
+    position : relative;
+    text-decoration: none;
+    color: black;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top:15px;
+}
+.line{
+    width:33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+    
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+body{
+    background-color: black;
+}
+.abc{
+    
+    font-size: 40px;
+    color: #FFFADA; 
+    text-align: center;
+    padding-top: 80px;
+
+}
+.left-about{
+    padding-top: 10px;
+    max-width: 70%;
+    margin : 0 auto;
+    display : flex;
+    flex-wrap : wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.left-about img{
+    padding-top: 30px;
+    height: 400px;
+}
+.right-about{
+    color: #FFFADA;  
+   width: 550px;
+   max-width: 100%;
+   padding : 0 10px;
+   margin: 4px 3px;
+}
+.right-about .btn{
+    color:#FFFADA;
+    background-color: rgb(104, 117, 84);
+    padding: 10px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+@media only screen and (max-width : 980px){
+    .nav-list{
+        flex-direction: column;
+        width:100%;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .right-navbar{
+        text-align: center;
+        width:100%;
+    }
+    #login{
+        text-align: center;
+    }
+    #register{
+        text-align: center;
+    }
+    #searches{
+       width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+}
+
